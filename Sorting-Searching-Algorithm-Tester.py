@@ -81,21 +81,23 @@ def binary_search(arr, low, high):
 if __name__ == "__main__":      
     array = []
 
-    itemWanted = 10
-    length_of_list = 100000
+    itemWanted = 10854 # Item you want to search for
+    length_of_list = 10000000 # Amount of entries you want in your dataset
 
-    # fills an array with random numbers from range specified
+    # Fills an array with random numbers from range specified
     for x in range(length_of_list):
         array.append(random.randint(0,length_of_list))
     start_time = time.time()
-    # sorting algorithm
+    
+    # Add Sorting Algo of choice
     
     quick_sort(array,0,len(array)-1)
     
     past_time=time.time() - start_time
     
+    
     print("--- %s seconds to sort ---" % (time.time() - start_time))
-    # searching algorithm    
+    # Add Searching Algo of choice   
     binary_search(array,0,len(array)-1)
     
     print("--- %s seconds to find ---" % ((time.time() - start_time) - past_time))
