@@ -11,7 +11,7 @@
 
 <p align="center">
     <br>
-    This tool gives tracks the time taken for different algorithms to be executed to find the most efficient
+   This tool tracks the time taken for different algorithms to sort and find elements in an array
     <br />
  
 
